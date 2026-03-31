@@ -10,8 +10,7 @@ def productos_view(page: ft.Page) -> ft.Control:
     def inicio_nuevo_producto(_e):
         async def crear_nuevo_producto(data: dict):
             try:
-                # Si estas funciones no están importadas arriba, también marcarán error al dar clic.
-                # Por ahora, como vamos a desactivar el formulario, no causarán problema al iniciar.
+                
                 await create_product(data)
                 await show_snackbar(page, "Éxito", "Producto creado.", bgcolor=Colors.SUCCESS)
             except ApiError as ex:
