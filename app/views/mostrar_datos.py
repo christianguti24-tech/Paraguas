@@ -25,7 +25,7 @@ def productos_view(page: ft.Page) -> ft.Control:
     productos = list_products()
     total_items = len(productos)
 
-    # AQUÍ LE QUITÉ LOS # PARA QUE FUNCIONE BIEN EL TEXTO:
+   
     total_text = ft.Text(
         f"Total de productos: {total_items}",
         style=Textos_estilos.H4
