@@ -19,10 +19,7 @@ def productos_view(page: ft.Page) -> ft.Control:
             except Exception as ex:
                 await show_snackbar(page, "Error", str(ex), bgcolor=Colors.DANGER)
 
-        # AQUÍ ESTÁN LOS # QUE FALTABAN:
-        # dlg, open_, close = formulario_nuevo_editar_producto(page, on_submit=crear_nuevo_producto, initial=None)
-        # open_() 
-
+        
     btn_nuevo = ft.Button("Nuevo producto", icon="add", on_click=inicio_nuevo_producto)
 
     productos = list_products()
